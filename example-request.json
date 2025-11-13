@@ -1,0 +1,84 @@
+{
+  "input": {
+    "workflow": {
+      "3": {
+        "inputs": {
+          "per_batch": 5,
+          "upscale_model": [
+            "14",
+            0
+          ],
+          "images": [
+            "24",
+            0
+          ]
+        },
+        "class_type": "ImageUpscaleWithModelBatched",
+        "_meta": {
+          "title": "ImageUpscaleWithModelBatched"
+        }
+      },
+      "4": {
+        "inputs": {
+          "value": 30,
+          "images": [
+            "30",
+            0
+          ],
+          "audio": [
+            "24",
+            2
+          ]
+        },
+        "class_type": "CreateVideo",
+        "_meta": {
+          "title": "CreateVideo"
+        }
+      },
+      "5": {
+        "inputs": {
+          "filename": "video/ComfyUI",
+          "video": [
+            "4",
+            0
+          ]
+        },
+        "class_type": "SaveVideo",
+        "_meta": {
+          "title": "SaveVideo"
+        }
+      },
+      "14": {
+        "inputs": {
+          "model_name": "001_classicalSR_DF2K_s64w8_SwinIR-M_x4.pth"
+        },
+        "class_type": "UpscaleModelLoader",
+        "_meta": {
+          "title": "UpscaleModelLoader"
+        }
+      },
+      "24": {
+        "inputs": {
+          "filename": "https://h.uguu.se/RPyHvlxN.mp4"
+        },
+        "class_type": "VHS_LoadVideoPath",
+        "_meta": {
+          "title": "VHS_LoadVideoPath"
+        }
+      },
+      "30": {
+        "inputs": {
+          "filename": "film_net_fp32.pt",
+          "frames": [
+            "3",
+            0
+          ]
+        },
+        "class_type": "FILM VFI",
+        "_meta": {
+          "title": "FILM VFI"
+        }
+      }
+    }
+  }
+}
