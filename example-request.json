@@ -50,7 +50,7 @@
       },
       "14": {
         "inputs": {
-          "model_name": "001_classicalSR_DF2K_s64w8_SwinIR-M_x4.pth"
+          "model_name": "RealESRGAN_x4plus.pth"
         },
         "class_type": "UpscaleModelLoader",
         "_meta": {
